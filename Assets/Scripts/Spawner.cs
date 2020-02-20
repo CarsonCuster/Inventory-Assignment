@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject[] obstaclePattern;
+    public GameObject item;
 
     public float timeBtwSpawn;
     public float startTimeBtwSpawn;
@@ -13,8 +13,8 @@ public class Spawner : MonoBehaviour
     {
         if(timeBtwSpawn <= 0)
         {
-            int rand = Random.Range(0, obstaclePattern.Length);
-            Instantiate(obstaclePattern[rand], transform.position, Quaternion.identity);
+            int rand = Random.Range(0, 0);
+            Instantiate(item, transform.position, Quaternion.identity);
             timeBtwSpawn = startTimeBtwSpawn;
 
         }
@@ -22,8 +22,6 @@ public class Spawner : MonoBehaviour
         {
             timeBtwSpawn -= Time.deltaTime;
         }
-        
-        
     }
 
 }
