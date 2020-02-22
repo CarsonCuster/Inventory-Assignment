@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Carson;
 public class Item : MonoBehaviour
 {
     public GameObject item;
-  void OnCollisionEnter2D(Collision2D col)
+  virtual public void HitPlayer(PlayerController pc)
   {
       Debug.Log("bye");
       Destroy(gameObject);
