@@ -34,9 +34,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.GetComponent<Item>() != null)
+        if(col.gameObject.GetComponent<Item>() != null)//checks if the player has collided with an item.
         {
             col.gameObject.GetComponent<Item>().HitPlayer(this);
+            // Calls on the hit player function on collision and references itself as the other game object in the collsion.  
         }
     }
 
