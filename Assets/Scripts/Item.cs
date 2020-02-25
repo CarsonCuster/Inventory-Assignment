@@ -11,4 +11,5 @@ public class Item : MonoBehaviour
       Debug.Log("bye");
       Destroy(gameObject);//Detroys the Item children scripts when they collide with the player.
   }
+  
 }

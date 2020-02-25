@@ -8,6 +8,6 @@ public class PlusPointsItem: Item
     override public void HitPlayer(PlayerController pc)
    {
         pc.score++;//adds a point to the score when the player collides with this item.
-        //Destroy(gameObject);// destroys the attached game object.
+        base.HitPlayer(pc);
     }
 }
