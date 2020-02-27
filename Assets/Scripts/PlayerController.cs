@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 //Carson Wells Custer
 //Apply both the PlayerController script and PlayerControllerInput script to the player sprite, and put the sprite on the origin.
 namespace Carson
