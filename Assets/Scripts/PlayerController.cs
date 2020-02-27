@@ -8,7 +8,7 @@ namespace Carson
 {
 public class PlayerController : MonoBehaviour
 {
-    public int score;
+    public int score;//Reference to scoreText script
     private int move = 0;
     [Tooltip("Amount of lanes in your course")]
     public int trackWidth = 7;
