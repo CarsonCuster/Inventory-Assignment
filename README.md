@@ -6,3 +6,11 @@ This project contains a basic player controller that snaps the player object lef
 ### Collaboration
 ---
 Collaboration among the group went exceptionally well, as each person had their designated task and fullfilled them relatively early. Way was responsible for getting the parent/child infterface up and running in the project, Carson worked on getting the items to instantiate above the track to give the project an infinite runner feeling, and Carter was responsible for getting a UI working so that when the player picked up a score item, it would add to the score. As we all had our own designated tasks, we still helped each other when we would run into problems. Everyone essentially built each part even if they were not directly responsible for that part of the project.
+
+###Credits
+---
+Blackthornprod - HOW TO MAKE A SIMPLE GAME IN UNITY - ENDLESS RUNNER - #1
+Link: https://www.youtube.com/watch?v=5M7vX_z6B9I&t=310s
+
+Press Start - Unity - How to Keep Score
+Link: https://www.youtube.com/watch?v=aFArhpJB86s
