@@ -7,6 +7,7 @@ namespace Carson
 {
 public class PlayerController : MonoBehaviour
 {
+    public int score;
     private int move = 0;
     [Tooltip("Amount of lanes in your course")]
     public int trackWidth = 7;
@@ -30,6 +31,16 @@ public class PlayerController : MonoBehaviour
         //This is where the movement is defined. We are saying that when our current position is moved to our desired position, to take t amount of time
         transform.position = Vector3.Lerp(a, desiredPosition,t);
     }
+
+    public void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.GetComponent<Item>() != null)//checks if the player has collided with an item.
+        {
+            col.gameObject.GetComponent<Item>().HitPlayer(this);
+            // Calls on the hit player function on collision and references itself as the other game object in the collsion.  
+        }
+    }
+
 
     public void Move(int dir)
     {

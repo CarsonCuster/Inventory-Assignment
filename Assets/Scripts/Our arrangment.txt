@@ -1,0 +1,3 @@
+Carson is on the pooling system.
+Carter is creating the UI score counter.
+Way is on the inheritence.
